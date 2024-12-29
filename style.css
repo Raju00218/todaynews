@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbody{
+ 
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      
+}
+
+#nav-container{
+  position: fixed;
+   width: 80%;
+    display: flex; 
+    justify-content: center;
+    padding: 10px;
+    background-color: aqua;
+  
+}
+nav ul{
+    list-style-type: none; 
+    margin: 0; 
+    padding: 0; 
+    display: flex
+}
+nav ul li{
+    padding: 10px ;
+    
+}
+ul li{
+    font-family:'Ubuntu';
+}
+li a{
+    color: #0d1b2a ;
+    text-decoration: none;
+    
+}
+li{
+    list-style: none;
+    padding: 9px;
+    padding-right: 10rem;
+   
+}
+li h3{
+    font-family: 'Ubuntu';
+}
+#nav-container input, button{
+  border: none;
+  outline: none;
+  padding: .2rem;
+  background-color: #fff;
+  border: 1px solid #03192f ;
+  font-family: 'Nunito';
+  border-radius:4px ;
+
+}
+button{
+  width: 1.5rem;
+  cursor: pointer;
+}
+input:focus::placeholder{
+ color: transparent;
+}
+
+.main-contentbody{
+
+    display: flex;
+    justify-content: center;
+}
+.content-body{
+    display: grid;
+    grid-template-columns:repeat(3, 1fr); 
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 5.5rem;
+    width:80% ;
+    padding: 10px;
+      /* height: 100vh; */
+    background-color:#e9ecef ;
+}
+
+
+.card {
+
+  /* height:20rem ; */
+      margin: .5rem;
+    padding: 10px;
+    max-width: 23rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    background-color: rgb(255, 255, 255);
+    font-family: sans-serif;
+  }
+  
+  .content {
+    margin-top: 1rem;
+  }
+  
+  .content .header {
+    margin-top: 0.5rem;
+  }
+  
+  .img {
+   
+    width: 98%;
+    height: 15rem;
+    border-radius: 4px;
+    background-color: rgb(205, 235, 255);
+    padding: 3px;
+    
+  }
+  
+  .tag {
+  
+    text-transform: capitalize;
+    background-color: rgba(0, 0, 0, 0.425);
+    padding: 2px 8px;
+    border-radius: 4px;
+    color: #fff;
+  }
+  
+  .date {
+    font-family: 'Ubuntu';
+    /* display: flex; */
+    font-size: 0.75rem;
+    line-height: 1rem;
+    align-items: center;
+    margin: 2px;
+  }
+  
+  .title {
+    font-family: 'Montserrat' sans-serif;
+   text-decoration: none;
+    display: block;
+    font-size: 1.25rem;
+    line-height: 1.35rem;
+    font-weight: 600;
+    padding-bottom: 5px;
+    padding-top: 14px;
+  }
+  
+  .description {
+    line-height: 1.375;
+    font-family: 'Poppins''Montserrat';
+  }
+
+
+
+ /* From Uiverse.io by satyamchaudharydev */ 
+.loader {
+  display: block;
+  --height-of-loader: 4px;
+  --loader-color: #0071e2;
+  width: 130px;
+  height: var(--height-of-loader);
+  border-radius: 30px;
+  background-color: rgba(0,0,0,0.2);
+  position: relative;
+}
+
+.loader::before {
+  content: "";
+  position: absolute;
+  background: var(--loader-color);
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  border-radius: 30px;
+  animation: moving 1s ease-in-out infinite;
+  ;
+}
+
+@keyframes moving {
+  50% {
+    width: 100%;
+  }
+
+  100% {
+    width: 0;
+    right: 0;
+    left: unset;
+  }
+}
