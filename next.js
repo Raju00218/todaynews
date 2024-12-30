@@ -1,5 +1,5 @@
      apikey = '7fd233f02781c811e3bc689059ca0d59';
-     url = 'https://gnews.io/api/v4/search?q=example&lang=en&country=in&max=10&apikey=' + apikey;
+     url = 'GET https://gnews.io/api/v4/top-headlines?category=general&apikey='apikey;
 
      const contentBody =document.querySelector('.content-body')
      const mainContentbody = document.querySelector('main-contentbody')
