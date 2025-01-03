@@ -7,7 +7,7 @@
      const info = document.querySelector('.info')
      const searchArticle = document.querySelector('.search-article')
   //  console.log(searchArticle)
- 
+   const body = document.querySelector('body')
     
   
 
@@ -17,12 +17,12 @@
          
         const load = document.createElement('div')
         load.classList.add('loader')
-        contentBody.append(load)
+        contentBody.appendChild(load)
       setTimeout(()=>{
         getNews()
         load.remove()
        
-      },5000)
+      },2000)
     }
      loader()
 

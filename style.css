@@ -79,6 +79,7 @@ input:focus::placeholder{
     padding: 10px;
       /* height: 100vh; */
     background-color:#e9ecef ;
+    
 }
 
 
@@ -182,4 +183,7 @@ input:focus::placeholder{
     right: 0;
     left: unset;
   }
+}
+body .loader{
+ margin-left: 100%;
 }
