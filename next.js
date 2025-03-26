@@ -88,4 +88,7 @@
 searchArticle.addEventListener('click',()=>{
     alert('Still in develepment search engine')
 })
+window.addEventListener("scroll", () => {
+  window.scrollTo({ left: 0 });
+});
  
